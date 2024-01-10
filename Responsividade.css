@@ -1,0 +1,331 @@
+@media screen and (max-width: 1300px) {
+    .primeira-sessao {
+        text-align: center;
+    }
+
+    .container-cardapio {
+        grid-template-columns: 30% 30% 30%;
+    }
+
+    .info-rodizio {
+        height: 550px;
+    }
+
+    .img-rodizio img {
+        height: 550px;
+    }
+
+    .mapa {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .img-rodizio img {
+        display: none;
+    }
+
+    .info-rodizio {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* INICIO ESTILOS MENU HAMBURGUER */
+    header .content nav .list-menu {
+        display: none;
+    }
+
+    header .content nav .list-menu li a:hover {
+        background-color: transparent;
+    }
+
+    .one,
+    .two,
+    .there {
+        width: 80%;
+        height: 2px;
+        background-color: #fff;
+        margin: 6px auto;
+        transition-duration: 0.5s;
+    }
+
+    .menu-hamburguer {
+        width: 30px;
+        height: 30px;
+    }
+
+    .content.on {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(30, 31, 30, 0.8);
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content.on .logo {
+        display: none;
+    }
+
+    .content.on .menu-hamburguer {
+        position: absolute;
+        right: 111.5px;
+        top: 20px;
+    }
+
+    .content.on .list-menu {
+        display: block;
+    }
+
+    .content.on .list-menu li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content.on .list-menu li a {
+        font-size: 2em;
+    }
+
+    .content.on .menu-hamburguer .two {
+        opacity: 0;
+    }
+
+    .content.on .menu-hamburguer .one {
+        transform: rotate(45deg) translate(5px, -8px);
+    }
+
+    .content.on .menu-hamburguer .there {
+        transform: rotate(-45deg) translate(20px, -6px);
+    }
+
+    /* FIM ESTILOS MENU HAMBURGUER */
+
+    section.primeira-sessao h2 {
+        text-align: center;
+    }
+
+    .container-sobre {
+        height: 100vh;
+    }
+
+    section .sobre {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section .sobre .image-sobre img {
+        width: 750px;
+    }
+
+    section .text {
+        max-width: 750px;
+    }
+
+    .container-cardapio {
+        grid-template-columns: 45% 45%;
+    }
+
+    .info-rodizio {
+        max-width: 800px;
+        border-radius: 0 80px 0 80px;
+        animation: scaleButton 0.5s alternate infinite;
+    }
+
+
+    @keyframes scaleButton {
+        from {
+            transform: scale(1);
+        }
+
+        to {
+            transform: scale(1.04);
+        }
+    }
+
+    .img-rodizio img {
+        display: none;
+    }
+
+    .promocoes {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .promocoes h2 {
+        text-align: center;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    footer .mapa {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .horarios {
+        text-align: center;
+    }
+
+    iframe {
+        width: 100%;
+        margin-top: -70px;
+    }
+
+    .desenvolvimento {
+        text-align: center;
+        height: 50px;
+    }
+
+    .interface {
+        margin: 0 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .conteudo-principal {
+        font-size: 0.7em;
+    }
+
+    section .sobre .image-sobre img {
+        width: 100%;
+    }
+
+    section .text {
+        max-width: 100%;
+    }
+
+    .text-cardapio {
+        font-size: 1em;
+    }
+
+    section nav ul li span {
+        display: none;
+    }
+
+    .container-cardapio {
+        grid-template-columns: 45% 45%;
+    }
+
+    .info-rodizio {
+        padding: 10px;
+    }
+
+    .info-rodizio h2 {
+        font-size: 3.2em;
+        padding: 20px 0;
+    }
+
+    .info-rodizio h3 {
+        text-align: center;
+        font-size: 2em;
+        padding-bottom: 10px;
+    }
+
+    .promocoes h2 {
+        font-size: 2.2em;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    footer .circulo {
+        margin: 0 45%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-cardapio {
+        grid-template-columns: 90%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    section.primeira-sessao .btn {
+        gap: 30px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    section .text-cardapio {
+        text-align: center;
+    }
+
+    footer .mapa {
+        margin-top: 15%;
+    }
+
+    .info-rodizio {
+        height: 550px;
+        padding: 03;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    section.primeira-sessao h1 {
+        font-size: 4em;
+    }
+
+    section.primeira-sessao h2 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    section.primeira-sessao .btn button {
+        width: 200px;
+        height: 40px;
+    }
+
+    section.primeira-sessao .conteudo-principal h2 {
+        margin: 0 5%;
+    }
+
+    section.primeira-sessao .btn {
+        gap: 30px;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+    .btn-cardapio {
+        margin-top: 12%;
+    }
+
+    .info-rodizio h2 {
+        font-size: 2.5em;
+        padding: 10px 0;
+    }
+
+    .info-rodizio h3 {
+        font-size: 1.8em;
+    }
+
+    .info-rodizio p {
+        font-size: 1.5em;
+        padding: 0 10px;
+        text-align: justify;
+        padding-bottom: 30px;
+        line-height: 150%;
+    }
+
+    .btn-wpp {
+        bottom: 3%;
+        right: 3%;
+    }
+
+    .cardapio {
+        margin-top: 50%;
+    }
+}

@@ -1,0 +1,588 @@
+/* ESTILOS GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 50px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+    height: 100vh;
+    font-size: 65%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vw;
+    background-image: url(./images/relevo\ background\ branco.png);
+    background-size: cover;
+}
+
+.section-menu {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.section-menu img {
+    width: 50px;
+}
+
+.section-menu p {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    gap: 10px;
+    color: #ffffff;
+    transition: .3s ease;
+    cursor: pointer;
+    font-weight: 300;
+    border-bottom: 4px solid #ffb006;
+}
+
+.section-menu p:hover {
+    color: #ffb006;
+}
+
+/* ESTILOS PARA HEADER */
+header .content {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1f1e1f;
+    position: fixed;
+    z-index: 100000;
+}
+
+header .content .logo {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header .content .logo h3 {
+    color: white;
+    font-size: 1.6rem;
+}
+
+header .content .logo img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+header .content nav .list-menu {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .content nav .list-menu li a {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #ffffff;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.3s ease-in;
+}
+
+header .content nav .list-menu li a:hover {
+    background-color: #333333;
+    border-bottom: 4px solid #ffb006;
+    color: #ffb006;
+}
+
+/* ESTILOS PARA SESSÃO MAIN */
+section.primeira-sessao {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(./images/imagem\ de\ fundo\ 2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.primeira-sessao .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.primeira-sessao h1 {
+    color: #ffb006;
+    font-size: 5em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+section.primeira-sessao h2 {
+    color: rgb(177, 177, 177);
+    font-size: 3em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 3em;
+}
+
+section.primeira-sessao .btn button {
+    width: 230px;
+    height: 60px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #000;
+    font-weight: 700;
+    background-color: #ffb006;
+    transition: .3s ease;
+}
+
+section.primeira-sessao .btn button:hover {
+    border: 1px solid #ffb006;
+    background-color: transparent;
+    color: #ffb006;
+}
+
+section.primeira-sessao .btn {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ESTILOS PARA SESSÃO SOBRE */
+.container-sobre {
+    height: 52vh;
+    display: flex;
+    justify-content: center;
+}
+
+section .sobre {
+    display: flex;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+section .sobre .image-sobre img {
+    width: 100%;
+}
+
+section .text {
+    max-width: 650px;
+}
+
+section .text h3 {
+    font-size: 2em;
+    color: #333333;
+}
+
+section .text h2 {
+    border-top: 2px solid #333333;
+    font-size: 2.8em;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    color: #ffb006;
+}
+
+section .text p {
+    font-size: 1.3em;
+    text-align: justify;
+    line-height: 150%;
+}
+
+/* ESTILOS DO CARDÁPIO */
+.cardapio {
+    background-image: linear-gradient(rgba(29, 29, 29, 0.89), rgba(29, 29, 29, 0.89)), url(./images/relevo\ background2.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section .text-cardapio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+section .text-cardapio h3 {
+    color: #ffffff;
+    font-size: 2.5em;
+    padding-top: 50px;
+    font-weight: 300;
+}
+
+section .text-cardapio h2 {
+    color: #ffb006;
+    font-size: 5em;
+    text-transform: uppercase;
+}
+
+section nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+section nav ul li {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    gap: 10px;
+    color: #ffffff;
+    transition: .3s ease;
+    cursor: pointer;
+    font-weight: 300;
+    position: relative;
+}
+
+nav ul li.active::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #ffb006;
+    border-radius: 4px;
+    transform: scaleX(0.8) skewX(60deg);
+}
+
+section nav ul li img {
+    width: 40px;
+}
+
+.container-cardapio {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.item-cardapio {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-cardapio img {
+    width: 100%;
+    height: 250px;
+    transition: .3s ease;
+    filter: brightness(70%);
+}
+
+.item-cardapio img:hover {
+    transform: scale(1.1);
+}
+
+.item-cardapio p {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    font-size: 2.5em;
+    font-weight: 700;
+    transform: translate(1);
+    position: absolute;
+    transition: 0.3s;
+}
+
+.item-cardapio p:hover {
+    background-color: #ffffffbe;
+    color: #fff;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-cardapio a {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.item-cardapio a:hover {
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+}
+
+.btn-cardapio {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    padding-bottom: 200px;
+}
+
+.btn-cardapio button {
+    width: 250px;
+    height: 40px;
+    background-color: #ffb006;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .3s ease;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn-cardapio button:hover {
+    background-color: transparent;
+    border: 1px solid #ffb006;
+    color: #ffb006;
+}
+
+/* ESTILOS PARA RODÍZIO DE MINI-BURGER */
+.container-rodizio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -130px;
+    margin-bottom: 90px;
+    border-radius: 80px 0 0 10px;
+}
+
+.info-rodizio {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    height: 467px;
+    justify-content: center;
+    color: #ffffff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(./images/hamburguer\ desmontando.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 10px 0 0 80px;
+}
+
+.info-rodizio h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4em;
+    padding: 20px 0;
+}
+
+.info-rodizio h3 {
+    text-align: center;
+    font-size: 2.2em;
+    padding-bottom: 10px;
+}
+
+.info-rodizio p {
+    font-size: 1.5em;
+    padding: 0 50px;
+    text-align: justify;
+    padding-bottom: 30px;
+    line-height: 150%;
+}
+
+.info-rodizio a {
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    cursor: default;
+    font-weight: 700;
+}
+
+.info-rodizio button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    width: 190px;
+    height: 30px;
+    color: #ffffffd2;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.65em;
+}
+
+.img-rodizio img {
+    max-width: 700px;
+    display: flex;
+    border-radius: 0 10px 80px 0;
+    animation: scaleButton 0.5s alternate infinite;
+}
+
+/* ESTILOS PROMOÇÕES */
+.promocoes {
+    background-color: #ffb006;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90px;
+}
+
+.promocoes h2 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 2.5em;
+}
+
+input[type="text"] {
+    border: none;
+    border-bottom: 2px solid #fff;
+    padding: 10px;
+    background-color: transparent;
+    font-size: 1.5em;
+    color: #fff;
+    width: 90%;
+    outline: none;
+}
+
+input[type="text"]::placeholder {
+    color: #fff;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+/* ESTILOS PARA FOOTER */
+footer .mapa {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+    gap: 150px;
+}
+
+footer .horarios h2 {
+    font-size: 2.5em;
+    color: #1f1e1f;
+    border-bottom: 2px solid #1f1e1f;
+    margin-bottom: 20px;
+}
+
+footer .horarios p {
+    font-size: 1.5em;
+    color: #1f1e1f;
+    padding-top: 10px;
+}
+
+footer .horarios h3 {
+    font-size: 3em;
+    padding-top: 50px;
+    color: #ffb006;
+    padding-bottom: 10px;
+}
+
+footer .borda-icon i {
+    font-size: 35px;
+}
+
+/* ESTILOS PARA OS LINKS DO FOOTER */
+.footer-links {
+    background-image: linear-gradient(rgba(29, 29, 29, 0.89), rgba(29, 29, 29, 0.89)), url(./images/relevo\ background2.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    padding: 70px 0;
+}
+
+.institucional h2,
+.footer-cardapio h2,
+.end h2,
+.footer-rede-social h2 {
+    font-size: 2.2em;
+    padding-bottom: 15px;
+}
+
+.institucional ul li,
+.footer-cardapio ul li,
+.end p {
+    font-size: 1.5em;
+    padding-bottom: 7px;
+}
+
+footer .circulo {
+    background-color: #ffb006;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease;
+}
+
+footer .circulo:hover {
+    background-color: #000;
+}
+
+.footer-rede-social i {
+    font-size: 40px;
+    transition: .3s ease;
+}
+
+.footer-rede-social i:hover {
+    color: #ffb006;
+}
+
+.desenvolvimento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+.desenvolvimento p {
+    font-size: 1.3em;
+    color: #000000d8;
+    text-transform: uppercase;
+}
+
+.btn-wpp {
+    position: fixed;
+    bottom: 18px;
+    right: 18px;
+    z-index: 1000;
+}
+
+.btn-wpp img {
+    max-width: 50px;
+}

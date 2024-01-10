@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Responsividade.css">
+    <!-- INICIO BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- FIM BOOTSTRAP -->
+    <!-- INICIO BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- FIM BOXICONS -->
+    <!-- INICIO GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- FINAL GOOGLE FONTS -->
+    <!-- LINK PARA ANIMAÇÕES -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- FINAL LINK ANIMAÇÕES -->
+    <!-- SCRIPT PARA INICIAR ANIMAÇÕES -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- FINAL SCRIPT ANIMAÇÕES -->
+    <title>BurgerFood</title>
+</head>
+
+<body>
+    <header>
+        <div class="content">
+            <div class="logo" data-aos="flip-up" data-aos-delay="200" data-aos-duration="1500">
+                <img src="images/logo.jpg" alt="Cupcake">
+                <h3>BurgerFood</h3>
+            </div><!--logo-->
+            <nav>
+                <ul class="list-menu" data-aos="flip-up" data-aos-delay="200" data-aos-duration="1500">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobrenos">Sobre nós</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                </ul><!--list-menu-->
+            </nav>
+            <div class="menu-hamburguer">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="there"></div>
+            </div>
+        </div><!--content-->
+    </header>
+
+    <section class="primeira-sessao">
+        <div class="interface">
+            <div class="conteudo-principal" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1300">
+                <h1>Bateu aquela fome ?</h1>
+                <h2>Venha se deliciar com os melhores burgueres da região</h2>
+                <div class="btn">
+                    <button class="ifood">Peça no Ifood</button><!--ifood-->
+                    <button class="monte-seu-lanche">Peça no Whatsapp</button><!--monte-seu-lanche-->
+                </div><!--btn-->
+            </div><!--conteudo-principal-->
+        </div><!--interface-->
+    </section><!--primeira-sessao-->
+
+    <section class="container-sobre">
+        <div class="interface">
+            <div class="sobre">
+                <div class="image-sobre" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img src="images/donos hamburgueria.png" alt="Imagem donos da hamburgueria">
+                </div><!--image-sobre-->
+                <div class="text" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <h3>Hamburgueria BurgerFood</h3>
+                    <h2>Conheça a nossa historia !</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sint modi, culpa quaerat
+                        tenetur,
+                        animi voluptatem aut deserunt, nihil aperiam iusto est. Impedit iure quod ratione ex ad
+                        reiciendis
+                        sint.</p> <br>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel provident ex harum porro accusamus
+                        beatae quasi quam ea cumque, sequi odio atque quaerat ipsam sed officiis praesentium tenetur
+                        animi
+                        numquam?</p> <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit a labore laudantium inventore
+                        similique deserunt soluta officiis voluptatum nam necessitatibus distinctio, voluptates,
+                        nesciunt
+                        qui at ratione neque. Blanditiis, corrupti cum.</p>
+                </div><!--text-->
+            </div><!--sobre-->
+        </div><!--interface-->
+    </section><!--container-sobre-->
+
+    <main>
+        <section class="cardapio">
+            <div class="text-cardapio">
+                <h3>Aprecie sem moderação nosso delicioso</h3>
+                <div class="nome-cardapio" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                    <h2>Cardápio</h2>
+                </div>
+            </div><!--text-cardapio-->
+            <nav>
+                <ul>
+                    <li class="active" onclick="showMenu('burgers')"><img src="images/icon-burger.png"
+                            alt=""><span>Burgers</span></li>
+                    <li onclick="showMenu('bebidas')"><img src="images/icon-bebida.´ng.png" alt=""><span>Bebidas</span>
+                    </li>
+                    <li onclick="showMenu('porcoes')"><img src="images/icon-porção.png" alt=""><span>Porções</span></li>
+                    <li onclick="showMenu('sobremesa')"><img src="images/icon-sobremesa.png"
+                            alt=""><span>Sobremesa</span>
+                    </li>
+                </ul>
+            </nav>
+
+            <section class="container-cardapio" id="burgersSection">
+                <div class="item-cardapio" data-aos="fade-up" data-aos-delay="150">
+                    <img src="images/x-bacon salad.jpg" alt="Imagem do lanche">
+                    <p><a href="#">Bacon Salad</a></p>
+                </div>
+                <div class="item-cardapio" data-aos="fade-down" data-aos-delay="300">
+                    <img src="images/x-bacon salad.jpg" alt="Imagem do lanche">
+                    <p><a href="#">Bacon Salad</a></p>
+                </div>
+                <div class="item-cardapio" data-aos="fade-up" data-aos-delay="450">
+                    <img src="images/x-bacon salad.jpg" alt="Imagem do lanche">
+                    <p><a href="#">Bacon Salad</a></p>
+                </div>
+                <div class="item-cardapio" data-aos="fade-down" data-aos-delay="600">
+                    <img src="images/x-bacon salad.jpg" alt="Imagem do lanche">
+                    <p><a href="#">Bacon Salad</a></p>
+                </div>
+                <div class="item-cardapio" data-aos="fade-up" data-aos-delay="750">
+                    <img src="images/x-bacon salad.jpg" alt="Imagem do lanche">
+                    <p><a href="#">Bacon Salad</a></p>
+                </div>
+                <div class="item-cardapio" data-aos="fade-down" data-aos-delay="900">
+                    <img src="images/x-bacon salad.jpg" alt="Imagem do lanche">
+                    <p><a href="#">Bacon Salad</a></p>
+                </div>
+            </section><!--container-cardapio-->
+
+            <section class="container-cardapio" id="bebidasSection" style="display: none;">
+                <div class="item-cardapio" data-aos="fade-up" data-aos-delay="150">
+                    <img src="images/bebidas.png" alt="Imagem da bebida">
+                    <p><a href="#">Bebidas</a></p>
+                </div>
+                <div class="item-cardapio" data-aos="fade-down" data-aos-delay="300">
+                    <img src="images/bebidas.png" alt="Imagem da bebida">
+                    <p><a href="#">Bebidas</a></p>
+                </div>
+                <div class="item-cardapio" data-aos="fade-up" data-aos-delay="450">
+                    <img src="images/bebidas.png" alt="Imagem da bebida">
+                    <p><a href="#">Bebidas</a></p>
+                </div>
+                <div class="item-cardapio" data-aos="fade-down" data-aos-delay="600">
+                    <img src="images/bebidas.png" alt="Imagem da bebida">
+                    <p><a href="#">Bebidas</a></p>
+                </div>
+                <div class="item-cardapio" data-aos="fade-up" data-aos-delay="750">
+                    <img src="images/bebidas.png" alt="Imagem da bebida">
+                    <p><a href="#">Bebidas</a></p>
+                </div>
+                <div class="item-cardapio" data-aos="fade-down" data-aos-delay="900">
+                    <img src="images/bebidas.png" alt="Imagem da bebida">
+                    <p><a href="#">Bebidas</a></p>
+                </div>
+            </section><!--container-cardapio-->
+
+            <section class="container-cardapio" id="porcoesSection" style="display: none;">
+                <div class="item-cardapio" data-aos="fade-up" data-aos-delay="150">
+                    <img src="images/porçao batata frita.jpg" alt="Imagem da porção">
+                    <p><a href="#">Fritas normal</a></p>
+                </div>
+                <div class="item-cardapio" data-aos="fade-down" data-aos-delay="300">
+                    <img src="images/porçao batata frita.jpg" alt="Imagem da porção">
+                    <p><a href="#">Fritas normal</a></p>
+                </div>
+                <div class="item-cardapio" data-aos="fade-up" data-aos-delay="450">
+                    <img src="images/porçao batata frita.jpg" alt="Imagem da porção">
+                    <p><a href="#">Fritas normal</a></p>
+                </div>
+                <div class="item-cardapio" data-aos="fade-down" data-aos-delay="600">
+                    <img src="images/porçao batata frita.jpg" alt="Imagem da porção">
+                    <p><a href="#">Fritas normal</a></p>
+                </div>
+                <div class="item-cardapio" data-aos="fade-up" data-aos-delay="750">
+                    <img src="images/porçao batata frita.jpg" alt="Imagem da porção">
+                    <p><a href="#">Fritas normal</a></p>
+                </div>
+                <div class="item-cardapio" data-aos="fade-down" data-aos-delay="900">
+                    <img src="images/porçao batata frita.jpg" alt="Imagem da porção">
+                    <p><a href="#">Fritas normal</a></p>
+                </div>
+            </section><!--container-cardapio-->
+
+            <section class="container-cardapio" id="sobremesaSection" style="display: none;">
+                <div class="item-cardapio" data-aos="fade-up" data-aos-delay="150">
+                    <img src="images/sobremesa.jpg" alt="Imagem da sobremesa">
+                    <p><a href="#">Torta com cheesecake</a></p>
+                </div>
+                <div class="item-cardapio" data-aos="fade-down" data-aos-delay="300">
+                    <img src="images/sobremesa.jpg" alt="Imagem da sobremesa">
+                    <p><a href="#">Torta com cheesecake</a></p>
+                </div>
+                <div class="item-cardapio" data-aos="fade-up" data-aos-delay="450">
+                    <img src="images/sobremesa.jpg" alt="Imagem da sobremesa">
+                    <p><a href="#">Torta com cheesecake</a></p>
+                </div>
+                <div class="item-cardapio" data-aos="fade-down" data-aos-delay="600">
+                    <img src="images/sobremesa.jpg" alt="Imagem da sobremesa">
+                    <p><a href="#">Torta com cheesecake</a></p>
+                </div>
+                <div class="item-cardapio" data-aos="fade-up" data-aos-delay="750">
+                    <img src="images/sobremesa.jpg" alt="Imagem da sobremesa">
+                    <p><a href="#">Torta com cheesecake</a></p>
+                </div>
+                <div class="item-cardapio" data-aos="fade-down" data-aos-delay="900">
+                    <img src="images/sobremesa.jpg" alt="Imagem da sobremesa">
+                    <p><a href="#">Torta com cheesecake</a></p>
+                </div>
+            </section><!--container-cardapio-->
+
+            <div class="btn-cardapio">
+                <a href="#"><button>Acesse o cardápio completo</button></a>
+            </div><!--btn-cardapio-->
+        </section><!--cardapio-->
+    </main>
+
+    <section class="container-rodizio">
+        <div class="interface">
+            <div class="flex">
+                <div class="info-rodizio">
+                    <h2>Novidade da casa !</h2>
+                    <h3>Agora temos rodízio de mini-burger...</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id in hic ipsa atque numquam, velit
+                        perspiciatis quisquam assumenda inventore? Totam voluptatum facilis nihil error placeat soluta,
+                        ratione itaque modi adipisci.</p>
+                    <a href="#">Ficou curioso ? <button>Toque para saber mais</button></a>
+                </div><!--info-rodizio-->
+                <div class="img-rodizio">
+                    <img src="images/mini burger.jpg" alt="">
+                </div><!--img-rodizio-->
+            </div><!--flex-->
+        </div><!--interface-->
+    </section><!--container-rodizio-->
+
+    <section class="promocoes">
+        <div class="interface">
+            <h2>Fique por dentro de nossas novidades e promoções !</h2>
+            <form>
+                <input type="text" placeholder="Digite seu e-mail" name="email" required>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section> <!--promocoes-->
+
+    <footer>
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1937711546066!2d-46.56324092466989!3d-23.561483178799715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e820dde705d%3A0x5d9ada76950fa481!2sShopping%20An%C3%A1lia%20Franco!5e0!3m2!1spt-BR!2sbr!4v1703730132615!5m2!1spt-BR!2sbr"
+                width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="horarios">
+                <h2>Horários de funcionamento !</h2>
+                <p>Segunda á quinta - Das 13:00 ás 23:00</p>
+                <p>Sexta e sábado - Das 13:00 ás 1:00</p>
+                <p>Domingo - Das 12:00 ás 20:00</p>
+                <h3>Siga-nos nas redes:</h3>
+                <div class="borda-icon">
+                    <i class='bx bxl-instagram-alt'></i>
+                </div>
+                <div class="borda-icon">
+                    <i class='bx bxl-facebook-circle'></i>
+                </div>
+                <div class="borda-icon">
+                    <i class='bx bxl-youtube'></i>
+                </div>
+            </div> <!--horarios-->
+        </div> <!--mapa-->
+
+        <section class="footer-links">
+            <div class="institucional">
+                <h2>Intitucional</h2>
+                <ul>
+                    <li>Home</li>
+                    <li>Sobre nós</li>
+                    <li>Cardápio</li>
+                    <li>Rodízio</li>
+                    <li>Contato</li>
+                </ul>
+            </div>
+            <div class="footer-cardapio">
+                <h2>Cardápio</h2>
+                <ul>
+                    <li>Burgers</li>
+                    <li>Bebidas</li>
+                    <li>Porções</li>
+                    <li>Sobremesas</li>
+                </ul>
+            </div>
+            <div class="end">
+                <h2>Endereço / Telefone</h2>
+                <p>Rua XI de Novembro 200 - SP</p>
+                <p>(11) 99999-9999</p>
+            </div>
+            <div class="footer-rede-social">
+                <h2>Redes sociais:</h2>
+                <div class="circulo">
+                    <i class='bx bxl-instagram-alt'></i>
+                </div>
+                <div class="circulo">
+                    <i class='bx bxl-facebook-circle'></i>
+                </div>
+                <div class="circulo">
+                    <i class='bx bxl-youtube'></i>
+                </div>
+            </div>
+        </section> <!--footer-links-->
+
+        <section class="desenvolvimento">
+            <p>© 2023 BURGERFOOD | Desenvolvido por: Américo Rodrigues</p>
+        </section> <!--desenvolvimento-->
+    </footer>
+
+    <div class="btn-wpp" data-aos="zoom-in-up" data-aos-delay="400">
+        <a href="https://api.whatsapp.com/send?phone=5511964166962&text=" target="_blank">
+            <img src="images/whatsapp (1).png" alt="botão do whatsapp">
+        </a>
+    </div><!--btn-wpp-->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
